@@ -147,7 +147,9 @@
             Public
           </span>
         </div>
-        <div class="flex items-center space-x-2 mt-2 lg:mt-0 flex-wrap">
+        <div
+          class="invisible lg:visible flex items-center space-x-2 mt-2 lg:mt-0 flex-wrap"
+        >
           <button
             class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-2 py-1 bg-gray-700"
           >
@@ -587,7 +589,7 @@
               <strong class="font-bold">0</strong>tags</a
             >
           </div>
-          <div class="flex space-x-2 hidden lg:block">
+          <div class="flex space-x-2 invisible lg:visible">
             <button
               class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-3 py-1 bg-gray-700"
             >
