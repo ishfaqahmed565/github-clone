@@ -20,7 +20,7 @@
             ></path>
           </svg>
         </a>
-        <div class="relative">
+        <div class="relative hidden lg:block">
           <input
             type="text"
             placeholder="Search or jump to..."
@@ -115,7 +115,9 @@
     </nav>
     <!--Repo-specs starts-->
     <div class="flex flex-col pt-5 px-8 border-b-[1px] border-gray-900">
-      <div class="flex items-center justify-between mb-10">
+      <div
+        class="flex flex-col lg:flex-row lg:items-center justify-between mb-10"
+      >
         <div class="flex items-center space-x-3 relative">
           <svg
             aria-hidden="true"
@@ -130,7 +132,7 @@
               d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
             ></path>
           </svg>
-          <div class="flex items-center space-x-1 text-xl">
+          <div class="flex lg:items-center space-x-1 text-xl">
             <a href="#" class="text-blue-400 hover:underline">ishfaqahmed565</a>
             <span class="font-thin text-gray-300">/</span>
             <a href="#" class="text-blue-400 hover:underline"
@@ -143,7 +145,7 @@
             Public
           </span>
         </div>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-2 mt-2 lg:mt-0">
           <button
             class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-2 py-1 bg-gray-700"
           >
@@ -351,7 +353,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -376,7 +378,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -401,7 +403,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -426,7 +428,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -451,7 +453,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -476,7 +478,7 @@
           </li>
           <li>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -506,14 +508,15 @@
     <!--Repo-specs ends-->
 
     <!--File Explorer Container starts-->
-    <div class="container mx-auto my-8 px-4 flex">
-      <div class="w-3/4 mr-7">
+    <div class="container mx-auto my-8 px-4 flex flex-col lg:flex-row">
+      <div class="w-full lg:w-3/4 mr-7">
         <div class="branch-navigation flex items-center justify-between">
           <div class="flex space-x-2">
             <button
               class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-2 py-1 bg-gray-700"
             >
               <svg
+                text="gray"
                 aria-hidden="true"
                 height="16"
                 viewBox="0 0 16 16"
@@ -524,10 +527,10 @@
               >
                 <path
                   fill-rule="evenodd"
-                  d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"
+                  d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"
                 ></path>
               </svg>
-              Unwatch
+              master
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -542,7 +545,7 @@
               </svg>
             </button>
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-1 hover:text-blue-400 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-1 hover:text-blue-400 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -561,7 +564,7 @@
               <strong class="font-bold">25</strong>branches</a
             >
             <a
-              class="hover: cursor-pointer text-gray-200 flex items-center gap-1 hover:text-blue-400 py-1 px-2 rounded mb-2"
+              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-1 hover:text-blue-400 py-1 px-2 rounded mb-2"
             >
               <svg
                 text="gray"
@@ -582,7 +585,7 @@
               <strong class="font-bold">0</strong>tags</a
             >
           </div>
-          <div class="flex space-x-2">
+          <div class="flex space-x-2 hidden lg:block">
             <button
               class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-3 py-1 bg-gray-700"
             >
@@ -1138,9 +1141,9 @@
             </li>
           </ul>
         </div>
-        <div class="details-card border-2 border-gray-700 my-5 rounded-lg">
+        <div class="readme-card border-2 border-gray-700 my-5 rounded-lg px-3">
           <div
-            class="details-card-header flex justify-between border-b border-gray-600 py-3 px-3 rounded-t-lg"
+            class="details-card-header flex justify-between border-b border-gray-600 py-3 rounded-t-lg"
           >
             <div>
               <a
@@ -1161,477 +1164,16 @@
                     d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"
                   ></path>
                 </svg>
-                <span> README.md </span>
+                <h4>README.md</h4>
               </a>
             </div>
           </div>
-          <ul>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="Directory"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-            <li>
-              <div
-                class="flex items-center justify-between px-3 py-2 border-b-2 border-gray-800 hover:bg-gray-700"
-              >
-                <div class="flex items-center space-x-3">
-                  <svg
-                    aria-label="File"
-                    aria-hidden="true"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    version="1.1"
-                    width="16"
-                    data-view-component="true"
-                    class="text-gray-400 fill-current"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
-                    ></path>
-                  </svg>
-                  <a href="#" class="hover:text-blue-400 hover:underline"
-                    >assets</a
-                  >
-                </div>
-                <div class="w-80">
-                  <a
-                    href="#"
-                    class="font-xs font-thin hover:text-blue-400 hover:underline"
-                    >My first commit</a
-                  >
-                </div>
-
-                <a
-                  href="#"
-                  class="font-xs font-thin hover:text-blue-400 hover:underline"
-                  >3 days ago</a
-                >
-              </div>
-            </li>
-          </ul>
+          <div class="prose max-w-none px-4">
+            <Readme />
+          </div>
         </div>
       </div>
-      <div class="w-1/4 sidebar flex flex-col space-y-5">
+      <div class="w-full lg:w-1/4 sidebar flex flex-col space-y-5">
         <div class="about-section flex flex-col space-y-5">
           <h3 class="text-base font-semibold text-white">About</h3>
           <p class="text-sm font-thin text-white">
@@ -2035,8 +1577,9 @@
       </div>
       <!--Sidebar Container ends-->
     </div>
-    <!--File Explorer Container ends-->
-    <div class="flex justify-between items-center">
+    <footer
+      class="container w-full mx-auto flex flex-col flex-wrap space-y-5 lg:space-y-0 lg:flex-row space-x-12 items-center py-7 border-t border-gray-800"
+    >
       <div class="flex space-x-4">
         <svg
           class="fill-current w-4"
@@ -2050,7 +1593,50 @@
             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
           ></path>
         </svg>
+        <span class="text-xs">© 2022 GitHub, Inc</span>
       </div>
-    </div>
+      <div class="flex space-x-6 mr-5 flex-wrap items-center">
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Terms</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Privacy
+        </a>
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Security</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Status</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold">Docs</a>
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Contact</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Github</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Pricing</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold">API</a>
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >Training</a
+        >
+        <a href="#" class="text-blue-400 hover:underline font-semibold">Blog</a>
+        <a href="#" class="text-blue-400 hover:underline font-semibold"
+          >About</a
+        >
+      </div>
+    </footer>
+    <!--Footer ends-->
+    <!--File Explorer Container ends-->
   </div>
 </template>
+
+<script>
+import Readme from "./readme-tailwind.md";
+
+export default {
+  components: { Readme },
+};
+</script>
