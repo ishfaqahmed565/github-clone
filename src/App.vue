@@ -357,7 +357,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover:cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -382,7 +382,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover:cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover:cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -407,7 +407,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover: cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -432,7 +432,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover: cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -457,7 +457,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover: cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
@@ -482,7 +482,7 @@
           </li>
           <li>
             <a
-              class="hidden lg:block hover: cursor-pointer text-gray-200 flex items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
+              class="hidden lg:flex hover: cursor-pointer text-gray-200 items-center gap-2 hover:bg-gray-700 py-1 px-2 rounded mb-2"
             >
               <svg
                 aria-hidden="true"
