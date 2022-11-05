@@ -147,7 +147,7 @@
             Public
           </span>
         </div>
-        <div class="hidden lg:block flex items-center space-x-2 mt-2 lg:mt-0">
+        <div class="flex items-center space-x-2 mt-2 lg:mt-0 flex-wrap">
           <button
             class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-2 py-1 bg-gray-700"
           >
