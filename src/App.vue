@@ -34,7 +34,9 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center text-white space-x-4 font-semibold">
+        <div
+          class="hidden lg:block flex items-center text-white space-x-4 font-semibold"
+        >
           <a href="#" class="hover:text-gray-400">Pull requests</a>
           <a href="#" class="hover:text-gray-400">Issues</a>
           <a href="#" class="hover:text-gray-400">Marketplace</a>
@@ -145,7 +147,7 @@
             Public
           </span>
         </div>
-        <div class="flex items-center space-x-2 mt-2 lg:mt-0">
+        <div class="hidden lg:block flex items-center space-x-2 mt-2 lg:mt-0">
           <button
             class="flex items-center text-gray-200 border-2 border-gray-600 hover:border-gray-400 rounded px-2 py-1 bg-gray-700"
           >
